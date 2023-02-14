@@ -1,0 +1,126 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription Utilisateur{% endblock %}
+
+{% block body %}
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-9 text-center">
+				<h1 class="title">Inscription utilisateur
+				</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12 col-md-12 text-center">
+				<h2>veuillez remplir les champs ci-dessous</h2>
+				
+
+			</div>
+		</div>
+
+		<form class="form-horizontal" role="form">
+			<div class='container'>
+
+				<div class='row'>
+					<div class="col-lg-12">
+						<div class="form-heading">
+							<span class="prg">Vos informations</span>
+						</div>
+					</div>
+				</div>
+				<div
+					class='row'>
+
+
+					<!--<form class="form-horizontal" role="form">-->
+
+					<div class='col-12'>
+						<div class="row">
+							<div class="form-group col-4">
+								<label for="civilite" class="col-sm-2 control-label">Civilité :</label>
+								<div>
+									<select class="form-control">
+										<option>Mr/Mme/Melle/Ng</option>
+										<option>Monsieur</option>
+										<option>Madame</option>
+										<option>Mademoiselle</option>
+										<option>Ng</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group col-4">
+								<label for="nom" class="col-sm-2 control-label">Nom :</label>
+								<div>
+									<input type="text" class="form-control" name="name" placeholder="Votre nom" id="name" required>
+								</div>
+							</div>
+							<div class="form-group col-4">
+								<label for="prenom" class="col-sm-2 control-label">Prenom :</label>
+								<div>
+									<input type="text" class="form-control" name="prenom" placeholder="Votre prénom" id="prenom" required>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="mail" class="col-sm-2 control-label">Email :</label>
+						<div class="col-sm-12">
+							<input type="email" class="form-control" name="email" placeholder="Veuillez saisir votre Email" id="email" required>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="row">
+							<div class="form-group col-6">
+								<label for="tel" class="col-sm-2 control-label">T&eacute;l&eacute;phone :</label>
+								<div>
+									<input type="text" class="form-control" name="tel" placeholder="Votre numéro de téléphone" id="tel" required>
+								</div>
+							</div>
+							<div class="form-group col-6">
+								<label for="mobile" class="col-sm-2 control-label">Mobile :</label>
+								<div>
+									<input type="text" class="form-control" name="mobile" placeholder="Votre numéro de mobile" id="mobile" required>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12">
+						Adresse de livraison:
+					</div>
+
+
+					<div class="col-12 col-lg-2">
+						<input class="form-control" type="text" name="delivery-number" placeholder="Numero de voie" required>
+					</div>
+					<div class="col-12 col-lg-3">
+						<input class="form-control" type="text" name="delivery-street" placeholder="Rue, Allée, Avenue..." required>
+					</div>
+					<div class="col-12 col-lg-2">
+						<input class="form-control" type="text" name="delivery-zipcode" placeholder="Code postal" required>
+					</div>
+					<div class="col-12 col-lg-3">
+						<input class="form-control" type="text" name="delivery-city" placeholder="Ville" required>
+					</div>
+					<div class="col-12 col-lg-2 mb-3">
+						<input class="form-control" type="text" name="delivery-country" placeholder="Pays" required>
+					</div>
+
+					
+
+					<div class="col-12 mt-2 text-center">
+						<button type="button" class="btn btn-success">Validation/connexion</button>
+					</div>
+					
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello categorie{% endblock %}
+
+{% block body %}
+
+ <div class="container">
+        <div class="row mt-5 ">
+                {% for categorie in categories %}
+                {% if categorie.parentCategorie == null %}
+                    <div class="col-md-6">
+                    <a href="{{path('app_souscategorie', {categorie : categorie.id }) }}">
+                        <img class="card-category-image" src="/images/{{ categorie.image }}" >
+                        <div class="text-center">
+                        <h2>{{ categorie.name}}</h2>
+                        </div>
+                    </a>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+        </div>
+    </div>
+
+
+{% endblock %}
